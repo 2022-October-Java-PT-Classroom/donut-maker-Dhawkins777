@@ -1,13 +1,87 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donut Clicker</title>
-  </head>
-  <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom's Donut Maker</title>
+    <link rel="stylesheet" type="text/css" href="resources/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Dom's Donut Maker</h1>
+        <hr />
+        <nav>
+            <div>
+                <a class="about-the-company-nav" href = "http://127.0.0.1:5501/index.html">Portfolio </a>
+            </div>
+            <div>
+                <a class="inspiration-nav"  href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Our Inspiration</a>
+            </div>
+            <div>
+                <a class="about-the-developer-nav" href="https://www.linkedin.com/in/dominique-hawkins-565346259/">Learn about the Developer on LinkedIn</a>
+            </div>
+            <div>
+                <a class="about-the-developer-nav" href="https://github.com/Dhawkins777">GitHub</a>
+            </div>
+            <div>
+                <a class="about-the-developer-nav" href="https://docs.google.com/document/d/1J06vIiNVDeJM3iOsFLGWjBPPRI2Iw0vfddIsnlAFsEk/edit">About the company</a>
+            </div>
+        </nav>
+    </header>
+    <div class="about-company modal">
+        <div class="modal-content">
+          <h2>About the Bakery</h2>
+          <p><strong>Dom's Baking Shoppe</strong> was opened in 2022 following a career change into baking. I learned to craft the best donuts, Dom's donuts.</p>
+        </div>
+    </div>
+    <div class="cookie-clicker modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Inspiration</h2>
+         
+        </div>
+    </div>
+    <div class="main">
+        <div class="stats">
+            <div class="donut-count-div">
+                <h2 class="donut-count"></h2>
+            </div>
+            <div class="flex">
+                <div class="donut-multiplier-div sale">
+                    <img src="resources\images\donut-crop.png" class="sale-img" />
+                    <h2>Donut Multipliers:</h2>
+                    <h2 class="donut-multiplier-count">0</h2>
+                    <p class="donut-multiplier-price">Cost: 10 Donuts </p>
+                    <button visibility="hidden" class="add-donut-multiplier button">Buy now!</button>
+                </div>
+                <div class="click-donut-div">
+                    <img class="add-donut" src="resources\images\istockphoto-1138438220-612x612.jpg" usemap="#donut">
+                    <h3 class="donuts-per-click">Current Amount</h3>
+                    <h2 class="donuts-per-second"> 0</h2>
+                </div>
+                <div class="auto-clicker-div sale">
+                    <img src="resources\images\donut-crop.png" class="sale-img" />
+                    <h2>Auto-Clickers:</h2>
+                    <h2 class="auto-clicker-count">0</h2>
+                    <p class="auto-clicker-price">Cost: 100 Donuts <br> (Cost Increases by 10% after each purchase)</p>
+                    <button class="add-auto-clicker button">Buy now!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="reset-div">
+            <button class="reset-button">RESET GAME</button>
+        </div>
+    </div>
+   
+        <div class="anchor"></div>
+    </div>
+    <!-- <script src="/src/js/DonutMaker.js"></script> -->
+    <script src="./donut-maker-app.js"></script>
+    <script src="./donut-maker.js"></script>
+    <footer class="footer">
+        <small class="footer__copyright">&copy;Dominique Hawkins 2022</small>
+      </footer>
+</body>
 </html>
